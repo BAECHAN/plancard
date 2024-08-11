@@ -31,30 +31,6 @@
 
 ## 기술
 
-### 백엔드
-
-1. **프로그래밍 언어**: Python, JavaScript (Node.js), Java, Kotlin
-2. **웹 프레임워크**: 
-    - Python: Django, Flask
-    - Node.js: Express.js
-    - Java: Spring Boot
-    - Kotlin: Ktor
-3. **API 개발 및 관리**: RESTful API, GraphQL
-4. **인증 및 권한 관리**: JWT, OAuth
-5. **실시간 데이터 처리**: WebSockets, Socket.io
-
-### 프론트엔드
-
-1. **프로그래밍 언어**: JavaScript, TypeScript
-2. **프레임워크 및 라이브러리**:
-    - React.js
-    - Vue.js
-    - Angular
-3. **상태 관리**: Redux, Vuex, MobX
-4. **UI 라이브러리**: Material-UI, Bootstrap, Ant Design
-
-### 모바일 앱 개발
-
 ============================================================================================================================================================================================================
 
 ## 컨텐츠 목차
