@@ -1,5 +1,5 @@
-# plancard-FE
-여행지 카드 수집 애플리케이션 FE
+# plancard
+여행지 카드 수집 애플리케이션
 
 ## 개요
 여행지 카드 수집 애플리케이션은 여행을 좋아하는 사람들에게 흥미롭고 유용한 기능을 제공할 수 있는 멋진 아이디어입니다. 이 애플리케이션의 주요 기능을 다음과 같이 정리하고 추가적인 세부 사항을 포함해보겠습니다.
@@ -54,61 +54,6 @@
 4. **UI 라이브러리**: Material-UI, Bootstrap, Ant Design
 
 ### 모바일 앱 개발
-
-1. **프로그래밍 언어**:
-    - Java, Kotlin (Android)
-    - Swift (iOS)
-2. **크로스 플랫폼 프레임워크**:
-    - React Native
-    - Flutter
-    - Ionic
-
-### 데이터베이스
-
-1. **관계형 데이터베이스**: PostgreSQL, MySQL, SQLite
-2. **NoSQL 데이터베이스**: MongoDB, Firebase Firestore
-3. **인메모리 데이터베이스**: Redis
-
-### 위치 기반 서비스
-
-1. **지도 API**: Google Maps API, Mapbox
-2. **위치 서비스**: GPS, Geolocation API
-
-### 기타 도구 및 서비스
-
-1. **클라우드 서비스**: AWS, Google Cloud, Microsoft Azure
-2. **서버 관리**: Docker, Kubernetes
-3. **CI/CD**: Jenkins, GitHub Actions, Travis CI
-4. **버전 관리**: Git, GitHub, GitLab, Bitbucket
-5. **테스트**:
-    - 프론트엔드: Jest, Mocha, Cypress
-    - 백엔드: pytest, JUnit, Mocha/Chai
-6. **분석 및 모니터링**: Google Analytics, New Relic, Sentry
-7. **디자인 도구**: Figma, Adobe XD, Sketch
-
-### 기술 스택 예시
-
-#### 백엔드
-- **언어**: Python
-- **프레임워크**: Django (REST framework 사용)
-- **데이터베이스**: PostgreSQL
-- **인증**: JWT
-- **실시간 데이터**: Django Channels
-
-#### 프론트엔드
-- **언어**: JavaScript, TypeScript
-- **프레임워크**: React.js
-- **상태 관리**: Redux
-- **UI 라이브러리**: Material-UI
-
-#### 모바일 앱
-- **프레임워크**: React Native
-
-#### 클라우드 및 기타
-- **클라우드 서비스**: AWS (EC2, S3, RDS)
-- **버전 관리**: GitHub
-- **CI/CD**: GitHub Actions
-- **지도 API**: Google Maps API
 
 ============================================================================================================================================================================================================
 
