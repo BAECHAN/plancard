@@ -19,3 +19,7 @@
 1. Explore ( o ) / Mine ( x ) 면 그냥 가져옴
 2. Explore ( o ) / Mine ( o ) 둘 다 장바구니에 담았을 때 Mine에 가지고 있으니 중복된 카드는 제거됩니다.
 3. Explore ( o ) / Mine ( o ) Explore만 담았을 때는 Mine에 있는 카드로 대체됩니다.
+
+
+- Day1 Day2 이렇게 Day를 옮길수있도록 하는건 어떨까
+- 
