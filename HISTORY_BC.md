@@ -11,3 +11,4 @@
 Postman을 만들던 도중 Response를 Example로 미리 만들 수 없는 상황이라 고심하던 와중에 Postman에서 Mock Server를 제공하고 있어
 이를 활용하려고함
 
+먼저 ERD나 클라이언트 객체 타입을 명시해 두어야 API를 만들 수 있지 않을까 생각..하여 ERD처럼까진 아니더라도 type 정의 파일을 작성해두려고함
