@@ -1,8 +1,10 @@
 interface ApiResponse<T> {
-  success: boolean;
+  status: number;
   message: string;
   data: T;
   pagination?: PaginationResponse;
+
+  details?: string; // 에러 발생 시 추가
 }
 
 interface PaginationResponse extends PaginationRequest{
@@ -16,7 +18,7 @@ interface PaginationRequest {
 }
 
 interface Card {
-  id: string; // 부모 key와 연결해야함
+  cardId: number; // 부모 key와 연결해야함
   title: string;
   description: string;
   country: Country['title'];
@@ -29,12 +31,10 @@ interface Card {
   scrap: boolean;
 }
 
-interface CardTag {
-  id: string;
-  title: string;
-}
+type CardTag = string;
 
 interface CardImage {
+    imageId: number;
     imageUrl: string;
     alt: string;
     isMain: boolean;
@@ -43,9 +43,9 @@ interface CardImage {
 interface myCard extends Card {
   getDate: Date;
   lastUpdateDate: Date;
-  customImageUrlList: CardImage[];
-  customMemo: string;
-  customTagList: CardTag[];
+  myImageUrlList: CardImage[];
+  myMemo: string;
+  myTagList: CardTag[];
 }
 
 interface Country {
@@ -71,15 +71,9 @@ interface City {
   description: string;
 }
 
-interface Category {
-  id: string;
-  title: 'attraction' | 'restaurant' | 'cafe' | 'mart' | 'transportation' | 'lodging' | 'others'; //관광지, 음식점, 카페, 마트, 교통수단, 숙소, 기타
-}
+type Category = 'attraction' | 'restaurant' | 'cafe' | 'mart' | 'transportation' | 'lodging' | 'others'; //관광지, 음식점, 카페, 마트, 교통수단, 숙소, 기타
 
-interface Theme {
-  id: string;
-  title: string; // 해변, 도시, 고대, 산
-}
+type Theme = string; // 해변, 도시, 고대, 산
 
 interface SearchCardForm {
   search: string;
@@ -96,11 +90,11 @@ interface SearchPlanForm {
 }
 
 type SearchFilterCard = {
-  label: Theme['title'];
-  value: Theme['id'];
+  label: Theme
+  value: Theme
 } | {
-  label: Category['title'];
-  value: Category['id'];
+  label: Category
+  value: Category
 } | {
   label: Country['title'];
   value: Country['isoCode']
@@ -131,7 +125,7 @@ interface SearchSortPlan {
 }
 
 interface Plan {
-  id: string;
+  planId: number;
   title: string;
   memo: string;
   likeCount: number;
@@ -152,7 +146,7 @@ interface DailyPlan {
 }
 
 interface Bridge {
-  id: string;
+  id: number;
   description: string;
 }
 
