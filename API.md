@@ -45,7 +45,13 @@
         가져온 검색 결과2
       },
     ],
-    "details": "일치하는 정보를 가져왔습니다."
+    "details": "일치하는 정보를 가져왔습니다.",
+    "pagination" : {
+         totalPages: number,
+         totalItems: number,
+         currentPage: number,
+         itemsPerPage: number
+    }
 }
 ```
 
