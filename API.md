@@ -1,3 +1,8 @@
+## 주의점
+디버깅을 위한 에러 메시지는 개발서버에서만 ( 운영서버에서 표출될 경우 보안위협 )
+
+## HTTP Status Code 관리 목록
+
 | Status Code | Status Title | Description | Request Method | Response |
 |-------|-------|-------|-------|-------|
 | 200 | OK |  GET 요청에 대한 응답으로 리소스 데이터를 반환할 <br /> - 검색목록이 0건인 경우에도 | GET | 가져온 리소스 데이터 |
