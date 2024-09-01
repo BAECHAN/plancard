@@ -1,3 +1,9 @@
+## 규칙
+
+params : kebab-case
+pathVariable : kebab-case
+requestBody내 key : camelCase
+
 ## 주의점
 디버깅을 위한 에러 메시지는 개발서버에서만 ( 운영서버에서 표출될 경우 보안위협 )
 
