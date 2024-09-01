@@ -1,9 +1,18 @@
 ## 규칙
 
+### 변수명명
 - params : kebab-case
 - pathVariable : kebab-case
 - requestBody내 key : camelCase
 
+### 용어
+- regist : 등록하다 ( 기존에 있던 것을 바인딩 )
+- select : 선택하다 ( 기존에 있던 것을 바인딩, regist와 다르게 entity를 연결하는 느낌이 강함 )
+- create : 생성하다 ( 기존에 없던 것을 생성 )
+
+- remove : 제거하다 ( 기존에 있던 것을 디바인딩 )
+- delete : 삭제하다 ( 기존에 있던 것을 제거 )
+ 
 ## 주의점
 디버깅을 위한 에러 메시지는 개발서버에서만 ( 운영서버에서 표출될 경우 보안위협 )
 
