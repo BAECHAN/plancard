@@ -78,7 +78,7 @@
     "status": 400,
     "message": "Bad Request",
     "data": null
-    "details": "요청하신 형식이 잘못되었습니다. "
+    "details": "요청하신 데이터 타입이 맞지 않습니다."
 }
 ```
 
@@ -87,7 +87,7 @@
 {
     "status": 401,
     "message": "Unauthorized",
-    "data": null
+    "data": null,
     "details": "인증 토큰이 만료되었습니다."
 }
 ```
@@ -97,8 +97,18 @@
 {
     "status": 403,
     "message": "Forbidden",
-    "data": null
-    "details": "접근 권한이 없습니다."
+    "data": null,
+    "details": "해당 리소스에 대한 접근 권한이 없습니다."
+}
+```
+### 404 - Default
+
+```
+{
+    "status": 404,
+    "message": "Not Found",
+    "data": null,
+    "details": "요청하신 리소스를 찾을 수 없습니다."
 }
 ```
 
