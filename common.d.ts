@@ -7,6 +7,8 @@ interface ApiResponse<T> {
   details?: string; // 에러 발생 시 추가
 }
 
+type DateToString = 'yyyy-MM-dd';
+
 interface PaginationResponse extends PaginationRequest{
   totalPages: number,
   totalItems: number,
@@ -31,7 +33,10 @@ interface Card {
   scrap: boolean;
 }
 
-type CardTag = string;
+type CardTag = {
+  tagId: number;
+  tagName: string;
+};
 
 interface CardImage {
     imageId: number;
@@ -40,7 +45,7 @@ interface CardImage {
     isMain: boolean;
 }
 
-interface myCard extends Card {
+interface MyCard extends Card {
   getDate: Date;
   lastUpdateDate: Date;
   myImageUrlList: CardImage[];
@@ -132,15 +137,17 @@ interface Plan {
   author: string;   // my plan은 이게 내꺼인거만
   createdDate: Date;
   lastUpdateDate: Date;
-  startDate: Date;  // 여행 시작 일자
-  endDate: Date;    // 여행 끝 일자
+  startDate: DateToString;  // 여행 시작 일자
+  endDate: DateToString;    // 여행 끝 일자
   duration: number; // 여행 끝 일자 - 여행 시작 일자 + 1
 
   dailyList: DailyPlan[]
 }
 
 interface DailyPlan {
-  date: Date;
+  dailyId: number;
+  day: number; // 1부터 시작
+  date: DateToString;
   cardList : Card[];
   bridgeList: Bridge[];
 }
