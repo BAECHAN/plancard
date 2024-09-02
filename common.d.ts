@@ -113,7 +113,6 @@ interface SearchSortPlan {
 interface Plan {
   planId: number;
   title: string;
-  memo: string;
   likeCount: number;
   author: string;   // my plan은 이게 내꺼인거만
   createdDate: Date;
@@ -124,6 +123,7 @@ interface Plan {
 }
 
 interface PlanDetail extends Plan {
+  memo: string;
   dailyList: DailyPlan[]
 }
 
