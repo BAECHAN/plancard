@@ -61,18 +61,11 @@ interface Country {
   description: string;
 }
 
-interface CountryCode {
-  US : "US",     // 미국
-  KR : "KR",     // 대한민국
-  JP : "JP",     // 일본
-  CN : "CN",     // 중국
-  FR : "FR",     // 프랑스
-  // 추가 국가들...
-}
+type CountryCode = 'US' | 'KR' | 'JP' | 'CN' | 'FR';
 
 interface City {
   title: string;        // 도시 이름
-  countryIsoCode: CountryCode; // ISO 국가 코드 (Country와 연결)
+  countryIsoCode: Country['isoCode']; // ISO 국가 코드 (Country와 연결)
   description: string;
 }
 
@@ -81,38 +74,26 @@ type Category = 'attraction' | 'restaurant' | 'cafe' | 'mart' | 'transportation'
 type Theme = string; // 해변, 도시, 고대, 산
 
 interface SearchCardForm {
-  search: string;
   type: 'owned' | 'all';
-  filter: SearchFilterCard[];
-  sort: SearchSortCard;
+  pagination: PaginationRequest;
+  
+  search?: string;
+  filter?: SearchFilterCard;
+  sort?: SearchSortCard;
 }
 
 interface SearchPlanForm {
   search: string;
   type: 'owned' | 'all';
-  filter: SearchFilterPlan[];
+  filter: SearchFilterPlan;
   sort: SearchSortPlan;
 }
-
 type SearchFilterCard = {
-  label: Theme
-  value: Theme
-} | {
-  label: Category
-  value: Category
-} | {
-  label: Country['title'];
-  value: Country['isoCode']
-} | {
-  label: City['title'];
-  value: City['countryIsoCode'];
-} |
- {
-  label : string;
-  value : string;
-} | {
-  label: string;
-  value: boolean; // 보유여부
+  scrap?: boolean,
+  country?: Country['isoCode'],
+  city?: City['title'],
+  theme?: Theme[],
+  category?: Category[],
 }
 
 interface SearchSortCard {
