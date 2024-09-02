@@ -113,6 +113,7 @@ interface SearchSortPlan {
 interface Plan {
   planId: number;
   title: string;
+  visibilityType: 'public' | 'private';     // private 은 mine에만, public은 explore에 노출됨
   likeCount: number;
   author: string;   // my plan은 이게 내꺼인거만
   createdDate: Date;
