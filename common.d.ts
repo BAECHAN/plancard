@@ -121,7 +121,9 @@ interface Plan {
   startDate: DateToString;  // 여행 시작 일자
   endDate: DateToString;    // 여행 끝 일자
   duration: number; // 여행 끝 일자 - 여행 시작 일자 + 1
+}
 
+interface PlanDetail extends Plan {
   dailyList: DailyPlan[]
 }
 
