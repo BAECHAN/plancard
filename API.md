@@ -13,6 +13,16 @@
 - remove : 제거하다 ( 연결되어있던 것을 디바인딩 )
 - delete : 삭제하다 ( 기존에 있던 것을 제거 )
 
+### API 요청
+
+#### AS-IS
+{{baseUrl}}/cards/:card-id/delete-image
+
+#### TO-BE
+{{baseUrl}}/cards/:card-id/image
+
+위와같이 Method로 Delete관리하는거지 url에 Delete가 있는건 유추가 가능하기 쉬움
+
 ### postman 이용
 
 - '메모'에 추가정보 작성해두었으니, 만약 궁금한게있다면 '메모'를 확인해보시고 없으면 문의 부탁드립니다.
