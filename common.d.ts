@@ -146,7 +146,7 @@ interface DailyPlan {
 
 interface Bridge {
   id: number;
-  description: string;
+  memo: string;
 }
 
 interface User {
