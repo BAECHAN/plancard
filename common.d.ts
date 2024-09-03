@@ -15,8 +15,8 @@ interface PaginationResponse extends PaginationRequest{
 }
 
 interface PaginationRequest {
-  currentPage: number,
-  itemsPerPage: number
+  page: number,
+  size: number
 }
 
 interface Card {
