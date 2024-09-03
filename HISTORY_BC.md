@@ -12,3 +12,17 @@ Postman을 만들던 도중 Response를 Example로 미리 만들 수 없는 상�
 이를 활용하려고함
 
 먼저 ERD나 클라이언트 객체 타입을 명시해 두어야 API를 만들 수 있지 않을까 생각..하여 ERD처럼까진 아니더라도 type 정의 파일을 작성해두려고함
+
+## 2024-09-01
+- Postman Mock Server API 설계 작성 (초안)
+- API.md 파일 생성
+- common.d.ts파일 생성 ( TS Define )
+
+## 2024-09-03
+
+### 3차 회의 내용
+- Postman API 보완
+- TS Define을 Postman과 동기화
+- Postman API를 따라 화면 추가 작성
+- StoryBook 명세
+
