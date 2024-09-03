@@ -16,10 +16,14 @@
 ### API 요청
 
 #### AS-IS
-```{{baseUrl}}/cards/:card-id/delete-image```
+```
+{{baseUrl}}/cards/:card-id/delete-image
+```
 
 #### TO-BE
-```{{baseUrl}}/cards/:card-id/image```
+```
+{{baseUrl}}/cards/:card-id/image
+```
 
 위와같이 Method로 Delete관리하는거지 url에 Delete가 있는건 유추가 가능하기 쉬움
 
