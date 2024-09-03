@@ -26,7 +26,7 @@
 | Status Code | Status Title | Description | Request Method | Response |
 |-------|-------|-------|-------|-------|
 | 200 | OK |  GET 요청에 대한 응답으로 리소스 데이터를 반환할 <br /> - 검색목록이 0건인 경우에도 | GET | 가져온 리소스 데이터 |
-| 201 | Created | POST 요청으로 새로운 리소스를 생성되었을 때 응답으로 데이터 없이 반환할 때 <br /> - PUT 요청 후 리소스가 없어서 새로 생성한 경우에도  | POST / PUT | 생성된 리소스 데이터 | 
+| 201 | Created | POST 요청으로 새로운 리소스를 생성되었을 때  <br /> - PUT 요청 후 리소스가 없어서 새로 생성한 경우에도  | POST / PUT | 생성된 리소스 데이터 | 
 | 204 | No Content | 요청이 성공했지만, 반환할 내용이 없음을 나타냅니다. | PUT / PATCH / DELETE | 없음 |
 | 400 | Bad Request | 서버가 요청을 이해할 수 없거나, 유효하지 않을 경우 <br /> - JSON타입을 XML로 바꿔서 보내는 등 잘못된 형식으로 요청한 경우 | ALL | 없음 |
 | 401 | Unauthorized | 인증 토큰이 없는 상태로 보호된 리소스에 접근하는 경우 | ALL | 없음 |
