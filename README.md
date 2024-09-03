@@ -2,6 +2,7 @@
 여행지 카드 수집 애플리케이션
 
 - 디자인 URL : https://creatie.ai/file/134668821320358?fileOpenFrom=drafts&page_id=10%3A12248
+- POSTMAN API URL : https://orange-robot-474847.postman.co/workspace/planCard~7b9a53c9-56fa-4d5e-8833-6e72e3366cdc/collection/13576603-dee2aa0c-7bb4-4510-a1d4-1d3af35b4cfb?action=share&creator=13576603
 
 ## 개요
 여행지 카드 수집 애플리케이션은 여행을 좋아하는 사람들에게 흥미롭고 유용한 기능을 제공할 수 있는 멋진 아이디어입니다. 이 애플리케이션의 주요 기능을 다음과 같이 정리하고 추가적인 세부 사항을 포함해보겠습니다.
