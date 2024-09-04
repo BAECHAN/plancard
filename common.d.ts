@@ -25,7 +25,7 @@ interface Card {
   description: string;
   country: Country['title'];
   city: City['title'];
-  theme: Theme;
+  theme: Theme[];
   category: Category;
   rating: number; // 1 ~ 5
   googleMapLink: string;
@@ -71,7 +71,10 @@ interface City {
 
 type Category = 'attraction' | 'restaurant' | 'cafe' | 'mart' | 'transportation' | 'lodging' | 'others'; //관광지, 음식점, 카페, 마트, 교통수단, 숙소, 기타
 
-type Theme = string; // 해변, 도시, 고대, 산
+type Theme = {
+  themeId: number;
+  title: string; // 해변, 도시, 고대, 산
+}; 
 
 interface SearchCardForm {
   type: 'owned' | 'all';
