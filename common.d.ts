@@ -151,7 +151,7 @@ interface Day {
   planId: number;
   dayNumber: number; // 1부터 시작
   date: DateToString;
-  visibilityType: 'public' | 'private';     // private 은 mine에만, public은 explore에 노출됨 - 여기서 선택된 타입은 DailyPlan에도 일괄 적용되며 일단 값은 저장시킴
+  visibility: 'public' | 'private';     // private 은 mine에만, public은 explore에 노출됨 - 여기서 선택된 타입은 DailyPlan에도 일괄 적용되며 일단 값은 저장시킴
 
   title: string;
 
