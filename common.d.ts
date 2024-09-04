@@ -71,7 +71,7 @@ interface City {
 
 type Category = {
   categoryId: number;
-  title: 'attraction' | 'restaurant' | 'cafe' | 'mart' | 'transportation' | 'lodging' | 'others'; //관광지, 음식점, 카페, 마트, 교통수단, 숙소, 기타
+  title: 'attraction' | 'restaurant' | 'cafe' | 'mart' | 'transportation' | 'lodging' | 'others'; // 관광지, 음식점, 카페, 마트, 교통수단, 숙소, 기타
 }
 
 type Theme = {
