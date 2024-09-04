@@ -135,10 +135,10 @@ interface PlanDetail extends Plan {
 interface Day {
   dayId: number;
   planId: number;
-  day: number; // 1부터 시작
+  day_number: number; // 1부터 시작
   date: DateToString;
   likeCount: number;
-  dayTitle: string;
+  title: string;
   
   cardList : Card[];
   bridgeList: Bridge[];
