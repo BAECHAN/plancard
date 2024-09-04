@@ -171,3 +171,23 @@
     "details": "유효한 URL이 아닙니다."
 }
 ```
+
+### 500 - Default
+```
+{
+    "status": 500,
+    "message": "Internal Server Error",
+    "data": null,
+    "details": "예상치 못한 에러가 발생했습니다."
+}
+```
+
+### 504 - Default
+```
+{
+    "status": 504,
+    "message": "Gateway Timeout",
+    "data": null,
+    "details": "서버의 연결이 원활하지 않습니다."
+}
+```
