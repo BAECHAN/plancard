@@ -112,16 +112,19 @@ interface SearchSortPlan {
 
 interface Plan {
   planId: number;
-  title: string;
   visibilityType: 'public' | 'private';     // private 은 mine에만, public은 explore에 노출됨 - 여기서 선택된 타입은 DailyPlan에도 일괄 적용됨 
+
+  title: string;
   
   likeCount: number;
   scrap: boolean;
   like: boolean;
   
   author: string;   // my plan은 이게 내꺼인거만
+
   createdDate: Date;
   lastUpdateDate: Date;
+
   startDate: DateToString;  // 여행 시작 일자
   endDate: DateToString;    // 여행 끝 일자
   duration: number; // 여행 끝 일자 - 여행 시작 일자 + 1
@@ -137,8 +140,15 @@ interface Day {
   planId: number;
   day_number: number; // 1부터 시작
   date: DateToString;
-  likeCount: number;
+  visibilityType: 'public' | 'private';     // private 은 mine에만, public은 explore에 노출됨 - 여기서 선택된 타입은 DailyPlan에도 일괄 적용되며 일단 값은 저장시킴
+
   title: string;
+
+  likeCount: number;
+  scrap: boolean;
+  like: boolean;
+
+  author: string;
   
   cardList : Card[];
   bridgeList: Bridge[];
