@@ -118,7 +118,7 @@ interface SearchSortPlan {
 
 interface Plan {
   planId: number;
-  visibilityType: 'public' | 'private';     // private 은 mine에만, public은 explore에 노출됨 - 여기서 선택된 타입은 DailyPlan에도 일괄 적용됨 
+  visibility: 'public' | 'private';     // private 은 mine에만, public은 explore에 노출됨 - 여기서 선택된 타입은 DailyPlan에도 일괄 적용됨 
 
   title: string;
   
@@ -136,15 +136,20 @@ interface Plan {
   duration: number; // 여행 끝 일자 - 여행 시작 일자 + 1
 }
 
-interface PlanDetail extends Plan {
-  memo: string;
+interface PlanWithDay {
+  planId: number;
   dayList: Day[]
+}
+
+interface PlanWithMemo {
+  planId: number;
+  memo: string;
 }
 
 interface Day {
   dayId: number;
   planId: number;
-  day_number: number; // 1부터 시작
+  dayNumber: number; // 1부터 시작
   date: DateToString;
   visibilityType: 'public' | 'private';     // private 은 mine에만, public은 explore에 노출됨 - 여기서 선택된 타입은 DailyPlan에도 일괄 적용되며 일단 값은 저장시킴
 
