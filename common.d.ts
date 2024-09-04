@@ -129,16 +129,16 @@ interface Plan {
 
 interface PlanDetail extends Plan {
   memo: string;
-  dailyList: DailyPlan[]
+  dayList: Day[]
 }
 
-interface DailyPlan {
-  dailyId: number;
+interface Day {
+  dayId: number;
   planId: number;
   day: number; // 1부터 시작
   date: DateToString;
   likeCount: number;
-  dailyTitle: string;
+  dayTitle: string;
   
   cardList : Card[];
   bridgeList: Bridge[];
