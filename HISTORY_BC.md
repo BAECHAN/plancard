@@ -21,9 +21,15 @@ Postman을 만들던 도중 Response를 Example로 미리 만들 수 없는 상�
 ## 2024-09-03
 
 ### 3차 회의 내용
-- Postman API에서 DB 쿼리를 연상케하는 path이름은 제거하도록 ( 완료 )
+- Postman API에서 DB 쿼리를 연상케하는 path이름은 제거하도록
 - Postman API 보완
 - TS Define을 Postman과 동기화
 - Postman API를 따라 화면 추가 작성
 - StoryBook 명세
 
+### 3차 회의 내용 반영
+- ~Postman API에서 DB 쿼리를 연상케하는 path이름은 제거하도록~
+- Postman API 보완
+- TS Define을 Postman과 동기화
+- Postman API를 따라 화면 추가 작성
+- StoryBook 명세
