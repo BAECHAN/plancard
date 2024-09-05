@@ -60,6 +60,7 @@ interface Country {
   dialCode: string;     // 국가 전화 코드 (예: "+1", "+82")
   currency: string;     // 통화 코드 (예: "USD", "KRW")
   description: string;
+  imageUrl: string; // 대표 이미지
 }
 
 type CountryCode = 'US' | 'KR' | 'JP' | 'CN' | 'FR';
@@ -68,6 +69,7 @@ interface City {
   title: string;        // 도시 이름
   countryIsoCode: Country['isoCode']; // ISO 국가 코드 (Country와 연결)
   description: string;
+  imageUrl: string; // 대표 이미지
 }
 
 type Category = {
