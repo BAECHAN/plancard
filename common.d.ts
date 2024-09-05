@@ -24,8 +24,8 @@ interface Card {
   cardId: number; // 부모 key와 연결해야함
   title: string;
   description: string;
-  country: Country['title'];
-  city: City['title'];
+  country: Country;
+  city: City;
   theme: Theme[];
   category: Category;
   rating: number; // 1 ~ 5
@@ -54,23 +54,23 @@ interface MyCard extends Card {
   myTagList: CardTag[];
 }
 
-interface Country {
+interface RegionBase {
   title: string;         // 국가 이름
-  isoCode: CountryCode; // ISO 3166-1 alpha-2 코드 (예: "US", "KR")
-  dialCode: string;     // 국가 전화 코드 (예: "+1", "+82")
-  currency: string;     // 통화 코드 (예: "USD", "KRW")
   description: string;
   imageUrl: string; // 대표 이미지
+}
+
+interface Country extends RegionBase {
+  countryId: number;
+  isoCode: CountryCode; // ISO 3166-1 alpha-2 코드 (예: "US", "KR")
+}
+
+interface City extends RegionBase{
+  cityId: number;
+  countryIsoCode: Country['isoCode']; // ISO 국가 코드 (Country와 연결)
 }
 
 type CountryCode = 'US' | 'KR' | 'JP' | 'CN' | 'FR';
-
-interface City {
-  title: string;        // 도시 이름
-  countryIsoCode: Country['isoCode']; // ISO 국가 코드 (Country와 연결)
-  description: string;
-  imageUrl: string; // 대표 이미지
-}
 
 type Category = {
   categoryId: number;
