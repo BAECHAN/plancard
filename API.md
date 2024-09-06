@@ -170,3 +170,13 @@
     "details": "서버의 연결이 원활하지 않습니다."
 }
 ```
+
+## UI
+
+### Loading
+
+### 임의 취소 AbortController
+
+### 오래걸리는 경우 어떻게 처리할지
+
+### refetch 관련
