@@ -137,6 +137,8 @@ interface Plan {
   startDate: DateToString;  // 여행 시작 일자
   endDate: DateToString;    // 여행 끝 일자
   duration: number; // 여행 끝 일자 - 여행 시작 일자 + 1
+
+  tagList: CardTag[]; // country, city, theme, category 태그
 }
 
 interface PlanWithDay {
