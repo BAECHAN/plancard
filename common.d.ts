@@ -114,6 +114,21 @@ interface Plan {
   tagList: CardTag[]; // country, city, theme, category 태그
 }
 
+interface MyPlan extends Plan{
+  thumnailCardList : ThumnailCardForPlan[]
+}
+
+interface ThumnailCardForPlan { // MyPlan내 썸네일 카드용 기본정보 Card 
+  cardId: string; // 부모 key와 연결해야함
+  title: string;
+  description: string;
+  country: Country;
+  city: City;
+  category: Category;
+  rating: number; // 1 ~ 5
+  imageUrl: string;
+  scrap: boolean;
+}
 
 interface PlanWithDay {
   planId: string;
