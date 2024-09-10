@@ -23,7 +23,7 @@ interface PaginationRequest {
 }
 
 interface Card {
-  cardId: number; // 부모 key와 연결해야함
+  cardId: string; // 부모 key와 연결해야함
   title: string;
   description: string;
   country: Country;
@@ -94,7 +94,7 @@ interface SearchSortPlan extends SearchSortBase {
 }
 
 interface Plan {
-  planId: number;
+  planId: string;
   visibility: PlanVisibility;     
 
   title: string;
@@ -116,13 +116,13 @@ interface Plan {
 
 
 interface PlanWithDay {
-  planId: number;
+  planId: string;
   dayList: Day[]
 }
 
 interface Day {
-  dayId: number;
-  planId: number;
+  dayId: string;
+  planId: string;
   dayNumber: number; // 1부터 시작
   date: DateToString;
   visibility: PlanVisibility;
@@ -140,13 +140,13 @@ interface Day {
 }
 
 interface PlanWithMemo {
-  planId: number;
+  planId: string;
   memo: string;
 }
 
 
 interface Bridge {
-  id: number;
+  bridgeId: string;
   memo: string;
 }
 
@@ -162,32 +162,32 @@ interface RegionBase {
 }
 
 interface Country extends RegionBase {
-  countryId: number;
+  countryId: string;
   isoCode: CountryCode; // ISO 3166-1 alpha-2 코드 (예: "US", "KR")
 }
 
 interface City extends RegionBase{
-  cityId: number;
+  cityId: string;
   countryIsoCode: Country['isoCode']; // ISO 국가 코드 (Country와 연결)
 }
 
 type Category = {
-  categoryId: number;
+  categoryId: string;
   title: 'attraction' | 'restaurant' | 'cafe' | 'mart' | 'transportation' | 'lodging' | 'others'; // 관광지, 음식점, 카페, 마트, 교통수단, 숙소, 기타
 }
 
 type Theme = {
-  themeId: number;
+  themeId: string;
   title: string; // 해변, 도시, 고대, 산
 }; 
 
 type CardTag = {
-  tagId: number;
+  tagId: string;
   tagName: string;
 };
 
 interface CardImage {
-    imageId: number;
+    imageId: string;
     imageUrl: string;
     alt: string;
     isMain: boolean;
