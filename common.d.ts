@@ -118,16 +118,9 @@ interface MyPlan extends Plan{
   thumnailCardList : ThumnailCardForPlan[]
 }
 
-interface ThumnailCardForPlan { // MyPlan내 썸네일 카드용 기본정보 Card 
-  cardId: string; // 부모 key와 연결해야함
-  title: string;
-  description: string;
-  country: Country;
-  city: City;
-  category: Category;
-  rating: number; // 1 ~ 5
-  imageUrl: string;
-  scrap: boolean;
+// ThumnailCardForPlan을 Card에서 필요한 필드만 Pick해서 정의
+interface ThumnailCardForPlan extends Pick<Card, 'cardId' | 'title' | 'description' | 'country' | 'city' | 'category' | 'rating' | 'scrap'> {
+  imageUrl: string; // imageUrl은 별도로 추가
 }
 
 interface PlanWithDay {
