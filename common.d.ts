@@ -10,7 +10,8 @@ interface ApiResponse<T> {
 type DateToString = 'yyyy-MM-dd';
 type PlanVisibility = 'public' | 'private'; // private 은 mine에만, public은 explore에 노출됨 - 여기서 선택된 타입은 DailyPlan에도 일괄 적용됨 
 type CountryCode = 'US' | 'KR' | 'JP' | 'CN' | 'FR';
-type SortOrder = 'asc' | 'desc'
+type SortOrder = 'asc' | 'desc';
+type PlanOrDay = 'plan' | 'day';
 
 interface PaginationResponse extends PaginationRequest{
   totalPages: number,
@@ -78,6 +79,7 @@ type SearchFilterCard = SearchFilterBase;
 
 interface SearchFilterPlan extends SearchFilterBase {
   like: boolean,
+  type: PlanOrDay
 }
 
 interface SearchSortBase {
@@ -136,13 +138,13 @@ interface Day {
   visibility: PlanVisibility;
 
   title: string;
+  author: string;
 
   likeCount: number;
   scrap: boolean;
   like: boolean;
-
-  author: string;
-  
+ 
+  tagList: CardTag[]; // country, city, theme, category 태그
   cardList : Card[];
   bridgeList: Bridge[];
 }
