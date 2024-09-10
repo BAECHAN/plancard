@@ -66,10 +66,10 @@
     ],
     "details": "일치하는 정보를 가져왔습니다.",
     "pagination" : {
-         totalPages: number,
-         totalItems: number,
-         currentPage: number,
-         itemsPerPage: number
+         totalPages: 3,
+         totalItems: 30,
+         currentPage: 1,
+         itemsPerPage: 10
     }
 }
 ```
