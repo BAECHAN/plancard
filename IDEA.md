@@ -34,3 +34,7 @@
 ## 회원가입 폼
 
 https://chatgpt.com/share/288d47dc-9395-408c-bf84-121bd3a3f533
+
+## 스켈레톤 UI
+
+
