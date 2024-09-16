@@ -38,7 +38,6 @@ interface Card {
 }
 
 interface MyCard extends Card {
-  visibility: Visibility;
   getDate: Date;
   lastUpdateDate: Date;
   myImageList: CardImage[];
