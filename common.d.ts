@@ -8,7 +8,7 @@ interface ApiResponse<T> {
 }
 
 type DateToString = 'yyyy-MM-dd';
-type PlanVisibility = 'public' | 'private'; // private 은 mine에만, public은 explore에 노출됨 - 여기서 선택된 타입은 DailyPlan에도 일괄 적용됨 
+type Visibility = 'public' | 'private'; // private 은 mine에만, public은 explore에 노출됨 - 여기서 선택된 타입은 DailyPlan에도 일괄 적용됨 
 type CountryCode = 'US' | 'KR' | 'JP' | 'CN' | 'FR';
 type SortOrder = 'asc' | 'desc';
 type PlanOrDay = 'plan' | 'day';
@@ -38,6 +38,7 @@ interface Card {
 }
 
 interface MyCard extends Card {
+  visibility: Visibility;
   getDate: Date;
   lastUpdateDate: Date;
   myImageList: CardImage[];
@@ -97,7 +98,7 @@ interface SearchSortPlan extends SearchSortBase {
 
 interface Plan {
   planId: string;
-  visibility: PlanVisibility;     
+  visibility: Visibility;     
 
   title: string;
   
@@ -135,7 +136,7 @@ interface Day {
   planId: string;
   dayNumber: number; // 1부터 시작
   date: DateToString;
-  visibility: PlanVisibility;
+  visibility: Visibility;
 
   title: string;
   author: string;
