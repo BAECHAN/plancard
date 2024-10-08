@@ -38,4 +38,13 @@ https://chatgpt.com/share/288d47dc-9395-408c-bf84-121bd3a3f533
 ## 스켈레톤 UI
 카드나 플랜을 스켈레톤 UI 처리하는게 어떨까
 
+## requestAPI 함수 네이밍 컨벤션
+
+데이터 가져올때 - fetch
+데이터 생성할때 - create
+데이터 수정할때 - update
+데이터 삭제할때 - delete
+로그인 등 특수한 요청 - x
+
+ex) requestFetchUserData, requestUserLogin, requestUpdateUserData
 
