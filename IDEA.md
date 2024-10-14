@@ -38,6 +38,9 @@ https://chatgpt.com/share/288d47dc-9395-408c-bf84-121bd3a3f533
 ## 스켈레톤 UI
 카드나 플랜을 스켈레톤 UI 처리하는게 어떨까
 
+## 캐러셀 슬라이드
+https://swiperjs.com/demos
+
 ## requestAPI 함수 네이밍 컨벤션
 
 데이터 가져올때 - fetch
