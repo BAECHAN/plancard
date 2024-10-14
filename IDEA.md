@@ -41,6 +41,12 @@ https://chatgpt.com/share/288d47dc-9395-408c-bf84-121bd3a3f533
 ## 캐러셀 슬라이드
 https://swiperjs.com/demos
 
+## 클라이언트 비밀번호 암호화 관련
+
+https://velog.io/@mindev/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EC%97%90%EC%84%9C%EC%9D%98-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EC%95%94%ED%98%B8%ED%99%94%EB%8A%94-%EC%86%8C%EC%9A%A9%EC%9D%B4-%EC%97%86%EB%8B%A4.-with-apple
+
+클라이언트에서 암호화키를 가지고있는게 크게 보안측면에서 유리하게 가져갈수 없기 때문에 어떻게할지 고민중
+
 ## requestAPI 함수 네이밍 컨벤션
 
 데이터 가져올때 - fetch
